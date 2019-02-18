@@ -1,6 +1,6 @@
 {
     "name": "xwb-loading",
-    "version": "1.1.3",
+    "version": "1.1.4",
     "description": "react-loading",
     "main": "lib/index.js",
     "scripts": {
@@ -19,5 +19,10 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/xwb007/xwb-loading.git"
-    }
+    },
+    "keywords": [
+        "react",
+        "loading",
+        "xwb-loading"
+    ]
 }
