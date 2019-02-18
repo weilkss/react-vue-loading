@@ -2,7 +2,7 @@
 
 ## 适用于 React
 
-##安装
+### 安装
 
 ```shell
 
@@ -10,7 +10,7 @@ $ npm install xwb-loading -save
 
 ```
 
-##使用
+### 使用
 
 ```js
 import Loading from 'xwb-loading';
@@ -29,14 +29,14 @@ class Test extends Component {
 <Loading size={32} color='red'/>
 ```
 
-##属性
+### 属性
 
 | 属性  | 值      | 类型          |
 | ----- | ------- | ------------- |
 | size  | 24      | number string |
 | color | #2396fa | string        |
 
-##其他
+### 其他
 
 ```shell
 
