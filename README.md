@@ -48,6 +48,8 @@ Vue.use(Loading);
 | size  | 24      | number string |
 | color | #2396fa | string        |
 
+### 示例
+
 ```js
 
 <Loading size='32' color='#2396fa'/>
@@ -63,6 +65,7 @@ $ npm install
 $ npm run build
 
 ```
-###  vue git
+
+### vue git
 
 xeb-loading/vue[xeb-loading/vue](https://github.com/xwb007/xwb-loading-vue.git)
