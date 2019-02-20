@@ -1,10 +1,10 @@
 {
     "name": "xwb-loading",
-    "version": "1.1.4",
-    "description": "react-loading",
-    "main": "lib/index.js",
+    "version": "1.1.5",
+    "description": "vue-react-loading",
+    "main": "react/index.js",
     "scripts": {
-        "build": "babel index.js --out-dir lib"
+        "build": "babel src/react/index.js --out-dir react"
     },
     "author": "xwb007",
     "dependencies": {
@@ -21,6 +21,7 @@
         "url": "git+https://github.com/xwb007/xwb-loading.git"
     },
     "keywords": [
+        "vue",
         "react",
         "loading",
         "xwb-loading"
