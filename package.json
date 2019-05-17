@@ -1,10 +1,10 @@
 {
     "name": "xwb-loading",
-    "version": "1.1.5",
+    "version": "1.1.7",
     "description": "vue-react-loading",
-    "main": "react/index.js",
+    "main": "react/react.js",
     "scripts": {
-        "build": "babel src/react/index.js --out-dir react"
+        "build": "babel react/index.js --out-file ./react/react.js"
     },
     "author": "xwb007",
     "dependencies": {
