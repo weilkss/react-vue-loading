@@ -67,6 +67,3 @@ $ npm run build
 
 ```
 
-### vue git
-
-xeb-loading/vue[xeb-loading/vue](https://github.com/xwb007/xwb-loading-vue.git)
