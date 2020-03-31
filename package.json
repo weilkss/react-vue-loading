@@ -1,6 +1,6 @@
 {
   "name": "react-vue-loading",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a loading component for reactjs and vuejs",
   "main": "lib/index.js",
   "scripts": {
