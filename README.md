@@ -6,8 +6,6 @@
 
 👋 `react-vue-loading` [homepage](https://www.weilkss.cn/react-vue-loading)
 
-### 效果
-
 ### 引入
 
 ```shell
