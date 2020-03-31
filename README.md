@@ -1,29 +1,34 @@
-# xwb-loading
+# <center>react-vue-loading</center>
 
-## 适用于 React Vue
+## <center>适用于 React Vue 的 loading 组件</center>
 
+---
 
-### 安装
+👋 `react-vue-loading` [homepage](https://www.weilkss.cn/react-vue-loading)
+
+### 效果
+
+### 引入
 
 ```shell
-
-$ npm install xwb-loading -save
-
+$ npm install react-vue-loading --save
+# or
+$ yarn install react-vue-loading --save
 ```
 
 ### React 使用
 
 ```js
-import Loading from 'xwb-loading';
+import RVloading from 'react-vue-loading';
 
-class Test extends Component {
-    render() {
-        return (
-            <div className={styles.box}>
-                <Loading />
-            </div>
-        );
-    }
+class Example extends Component {
+  render() {
+    return (
+      <div className="example">
+        <RVloading />
+      </div>
+    );
+  }
 }
 ```
 
@@ -31,20 +36,20 @@ class Test extends Component {
 
 ```js
 //mian.js
-import Loading from 'xwb-loading/vue';
-Vue.use(Loading);
+import RVloading from 'react-vue-loading';
+Vue.use(RVloading);
 
-//test.vue
+//Example.vue
 <template>
-    <div class="test">
-        <Loading />
-    </div>
+  <div class="example">
+    <RVloading />
+  </div>
 </template>;
 ```
 
-### 属性
+### Props
 
-| 属性  | 值      | 类型          |
+| 属性  | 默认值  | 数据类型      |
 | ----- | ------- | ------------- |
 | size  | 24      | number string |
 | color | #2396fa | string        |
@@ -52,18 +57,15 @@ Vue.use(Loading);
 ### 示例
 
 ```js
-
-<Loading size='32' color='#2396fa'/>
-<Loading size={32} color='red'/>
-
+<RVloading size='32' color='#2396fa'/>
+// or
+<RVloading size={32} color='red'/>
 ```
 
-### 其他 React 编译
+### download
 
 ```shell
-
-$ npm install
-$ npm run build
-
+> git clone https://github.com/weilkss/react-vue-loading.git
+> npm i
+> npm run build
 ```
-

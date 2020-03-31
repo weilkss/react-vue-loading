@@ -1,29 +1,48 @@
 {
-    "name": "xwb-loading",
-    "version": "1.1.7",
-    "description": "vue-react-loading",
-    "main": "react/react.js",
-    "scripts": {
-        "build": "babel react/index.js --out-file ./react/react.js"
-    },
-    "author": "xwb007",
-    "dependencies": {
-        "react": "^16.8.2"
-    },
-    "devDependencies": {
-        "babel-preset-es2015": "^6.24.1",
-        "babel-preset-react": "^6.24.1",
-        "babel-plugin-transform-runtime": "^6.23.0"
-    },
-    "homepage": "https://github.com/xwb007/xwb-loading.git",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/xwb007/xwb-loading.git"
-    },
-    "keywords": [
-        "vue",
-        "react",
-        "loading",
-        "xwb-loading"
-    ]
+  "name": "react-vue-loading",
+  "version": "1.0.2",
+  "description": "This is a loading component for reactjs and vuejs",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "cross-env env_build=vue webpack&&cross-env env_build=react webpack"
+  },
+  "author": "weilkss",
+  "dependencies": {
+    "vue": "^2.5.11",
+    "react": "^16.8.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1"
+  },
+  "devDependencies": {
+    "shelljs": "^0.8.3",
+    "cross-env": "^5.0.5",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.6.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "homepage": "https://www.weilkss.cn/react-vue-loading",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weilkss/react-vue-loading.git"
+  },
+  "keywords": [
+    "vue",
+    "react",
+    "loading",
+    "react-vue-loading"
+  ],
+  "bugs": {
+    "url": "https://github.com/weilkss/react-vue-loading/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "license": "ISC"
 }
