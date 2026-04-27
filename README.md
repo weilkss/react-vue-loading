@@ -1,69 +1,119 @@
-# <center>react-vue-loading</center>
+# <center>🚀 react-vue-loading</center>
 
-## <center>适用于 React Vue 的 loading 组件</center>
+<p align="center">
+  <a href="https://www.npmjs.com/package/react-vue-loading"><img src="https://img.shields.io/npm/v/react-vue-loading.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/react-vue-loading"><img src="https://img.shields.io/npm/dt/react-vue-loading.svg" alt="npm downloads"></a>
+  <a href="https://bundlephobia.com/package/react-vue-loading"><img src="https://img.shields.io/bundlephobia/minzip/react-vue-loading" alt="bundle size"></a>
+  <img src="https://img.shields.io/npm/l/react-vue-loading.svg" alt="license">
+</p>
+
+<h3 align="center">A Zero-Dependency, Cross-Framework Loading Component.</h3>
+<p align="center">
+  <a href="https://www.weilkss.cn/react-vue-loading">👉 Live Demo & Homepage 👈</a>
+</p>
 
 ---
 
-👋 `react-vue-loading` [homepage](https://www.weilkss.cn/react-vue-loading)
+## ✨ 特性 (Features)
 
-### 引入
+- **真正零依赖 (Zero-Dependency)**：底层基于原生 Web Components 实现，不依赖任何框架的 Runtime。
+- **跨框架通用**：完美支持 `React`, `Vue 2/3`, `Svelte`, `SolidJS`, 甚至**原生纯 HTML**。
+- **极致轻量**：打包体积仅 **~1KB**，且完全没有内存泄漏。
+- **完美的 TypeScript 支持**：开箱即用，在 React 和 Vue 中都有极佳的 Props 代码提示。
+
+## 📦 安装 (Install)
 
 ```shell
-$ npm install react-vue-loading --save
+npm install react-vue-loading
 # or
-$ yarn install react-vue-loading --save
+yarn add react-vue-loading
+# or
+pnpm add react-vue-loading
 ```
 
-### React 使用
-
 ```js
-import RVloading from 'react-vue-loading';
+<script src="https://unpkg.com/react-vue-loading@1.0.5/lib/index.js"></script>
+```
 
-class Example extends Component {
-  render() {
-    return (
-      <div className="example">
-        <RVloading />
-      </div>
-    );
-  }
+## 💻 使用指南 (Usage)
+
+由于底层架构的升级，你**不再需要**像以前那样配置 `Vue.use()`，直接引入即可使用！
+
+### ⚛️ 在 React 中使用
+
+```tsx
+import React from "react";
+import RVLoading from "react-vue-loading";
+
+export default function App() {
+  return (
+    <div className="example">
+      <h3>React Example</h3>
+      <RVLoading size={32} color="#2396fa" />
+    </div>
+  );
 }
 ```
 
-### Vue 使用
+### 💚 在 Vue 3 / Vue 2 中使用
 
-```js
-//mian.js
-import RVloading from 'react-vue-loading';
-Vue.use(RVloading);
-
-//Example.vue
+```vue
 <template>
   <div class="example">
-    <RVloading />
+    <h3>Vue Example</h3>
+    <RVLoading :size="32" color="#2396fa" />
   </div>
-</template>;
+</template>
+
+<script lang="ts" setup>
+import RVLoading from "react-vue-loading";
+</>
 ```
 
-### Props
+> **💡 Vue 用户小贴士**: 如果在控制台看到 `Failed to resolve component...` 警告，这是因为 Vue 试图解析原生 Web Component。你可以在 `vite.config.ts` 或 `vue.config.js` 中配置 `compilerOptions.isCustomElement = tag => tag === 'rv-loading'` 即可消除警告。
 
-| 属性  | 默认值  | 数据类型      |
-| ----- | ------- | ------------- |
-| size  | 24      | number string |
-| color | #2396fa | string        |
+### 🌐 在纯 HTML / 原生 JS 中使用
 
-### 示例
+不仅是框架，在没有任何构建工具的原生网页中也能跑！
 
-```js
-<RVloading size='32' color='#2396fa'/>
-// or
-<RVloading size={32} color='red'/>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 引入组件库即可自动注册 -->
+    <script type="module">
+      import "react-vue-loading";
+    </script>
+  </head>
+  <body>
+    <!-- 当做原生 HTML 标签直接使用 -->
+    <rv-loading size="40" color="red"></rv-loading>
+  </body>
+</html>
 ```
 
-### download
+## ⚙️ 属性 (Props)
+
+组件支持智能的 TypeScript 类型推导：
+
+| 属性 (Prop) | 默认值 (Default) | 数据类型 (Type)    | 说明 (Description)                        |
+| ----------- | ---------------- | ------------------ | ----------------------------------------- |
+| `size`      | `24`             | `number \| string` | Loading的大小 (px)                        |
+| `color`     | `#2396fa`        | `string`           | Loading 线条的颜色，支持 hex/rgb/英文单词 |
+
+## 🛠 本地开发 (Development)
 
 ```shell
-> git clone https://github.com/weilkss/react-vue-loading.git
-> npm i
-> npm run build
+# 1. Clone 仓库
+git clone https://github.com/weilkss/react-vue-loading.git
+
+# 2. 安装依赖
+npm install
+
+# 3. 本地打包构建
+npm run build
 ```
+
+## 📄 License
+
+[ISC](LICENSE) © weilkss

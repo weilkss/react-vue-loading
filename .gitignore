@@ -9,3 +9,5 @@ dist
 bower_components
 .DS_Store
 package-lock.json
+pnpm-lock.yaml
+yarn-lock.yaml
