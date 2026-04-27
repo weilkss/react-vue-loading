@@ -32,7 +32,7 @@ pnpm add react-vue-loading
 ```
 
 ```js
-<script src="https://unpkg.com/react-vue-loading@1.0.5/lib/index.js"></script>
+<script src="https://unpkg.com/react-vue-loading@1.0.5/lib/react-vue-loading.js"></script>
 ```
 
 ## 💻 使用指南 (Usage)
