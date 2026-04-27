@@ -1,6 +1,6 @@
 {
   "name": "react-vue-loading",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A zero-dependency loading component for React, Vue, and all other frameworks.",
   "type": "module",
   "main": "./lib/react-vue-loading.js",

@@ -31,8 +31,13 @@ yarn add react-vue-loading
 pnpm add react-vue-loading
 ```
 
+## 🔧 引入 (Import)
+
 ```js
-<script src="https://unpkg.com/react-vue-loading@1.0.5/lib/react-vue-loading.js"></script>
+<script
+  type="module"
+  src="https://unpkg.com/react-vue-loading@1.0.6/lib/react-vue-loading.js"
+></script>
 ```
 
 ## 💻 使用指南 (Usage)
